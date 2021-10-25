@@ -5,14 +5,14 @@ json_with_double_quotes = '{"Name": "Jin"}'
 json_with_single_quotes = "{'Name': 'Jin'}"
 
 # (1) It works.
-r = json.loads(json_with_double_quotes)
+json.loads(json_with_double_quotes)
 
 # (2) It doesn't work. Because It is expressed by double quotes.
-r = json.loads(json_with_single_quotes)
+# json.loads(json_with_single_quotes)
 
-# (2-solution) Alternative way to convert from Single Quotes JSON to DICT
+# solution: Alternative way to convert from Single Quotes JSON to DICT
 import ast
+dict_with_single_quotes = ast.literal_eval(json_with_single_quotes)
 
-r = ast.literal_eval(json_with_single_quotes)
-
-
+# Tranform from JSON with single quotes to double-quotes.
+json.dumps(dict_with_single_quotes)
