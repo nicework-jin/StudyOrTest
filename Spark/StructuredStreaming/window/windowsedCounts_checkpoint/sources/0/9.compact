@@ -1,0 +1,11 @@
+v1
+{"path":"file:///Users/seongjin/programming/StudyOrTest/Spark/StructuredStreaming/window/data/sample.txt","timestamp":1635498609149,"batchId":0}
+{"path":"file:///Users/seongjin/programming/StudyOrTest/Spark/StructuredStreaming/window/data/sample_0.txt","timestamp":1635509224235,"batchId":1}
+{"path":"file:///Users/seongjin/programming/StudyOrTest/Spark/StructuredStreaming/window/data/sample_1.txt","timestamp":1635509226237,"batchId":2}
+{"path":"file:///Users/seongjin/programming/StudyOrTest/Spark/StructuredStreaming/window/data/sample_2.txt","timestamp":1635509228239,"batchId":3}
+{"path":"file:///Users/seongjin/programming/StudyOrTest/Spark/StructuredStreaming/window/data/sample_3.txt","timestamp":1635517296096,"batchId":4}
+{"path":"file:///Users/seongjin/programming/StudyOrTest/Spark/StructuredStreaming/window/data/sample_4.txt","timestamp":1635517298098,"batchId":5}
+{"path":"file:///Users/seongjin/programming/StudyOrTest/Spark/StructuredStreaming/window/data/sample_5.txt","timestamp":1635517300100,"batchId":6}
+{"path":"file:///Users/seongjin/programming/StudyOrTest/Spark/StructuredStreaming/window/data/sample_6.txt","timestamp":1635517302104,"batchId":7}
+{"path":"file:///Users/seongjin/programming/StudyOrTest/Spark/StructuredStreaming/window/data/sample_7.txt","timestamp":1635517304110,"batchId":8}
+{"path":"file:///Users/seongjin/programming/StudyOrTest/Spark/StructuredStreaming/window/data/sample_8.txt","timestamp":1635517306115,"batchId":9}

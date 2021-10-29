@@ -1,0 +1,4 @@
+v1
+{"path":"file:///Users/seongjin/programming/StudyOrTest/Spark/StructuredStreaming/window/windowsedCounts_output/part-00000-15090955-9f62-4f7d-91b0-122b7b325959-c000.snappy.parquet","size":1443,"isDir":false,"modificationTime":1635517418060,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///Users/seongjin/programming/StudyOrTest/Spark/StructuredStreaming/window/windowsedCounts_output/part-00078-e9de5617-80fd-4783-bba2-0aca6480568f-c000.snappy.parquet","size":1443,"isDir":false,"modificationTime":1635517418819,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///Users/seongjin/programming/StudyOrTest/Spark/StructuredStreaming/window/windowsedCounts_output/part-00088-e0eebbf2-3ce3-4d12-8cac-2f7c32e38aa4-c000.snappy.parquet","size":1443,"isDir":false,"modificationTime":1635517418911,"blockReplication":1,"blockSize":33554432,"action":"add"}
