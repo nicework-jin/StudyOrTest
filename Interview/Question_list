@@ -1,0 +1,35 @@
+# Hadoop
+secondary node 역할 -> 내고장성 아님. 빨리 키게 함. (무슨 말인지 찾아보기)
+
+# Kafka
+kafka 구조 설명 : pruducer broker consumer 각각 역할
+kafka: producer 비동기/동기 차이점
+kafka는 순서 보장?
+카프카에서 zookeeper 역할
+Kafka와 Flume의 차이
+디커플링
+
+# Spark
+Lazy Evaluation 장점
+spark에서 client/cluster 모드 차이
+standalone과 yarn 차이
+spark에서 master랑 worker 차이
+resourcemanager와 동작구조
+
+# CS
+해쉬 충돌이란?
+Map vs Tuple vs List 
+Stack vs queue!
+heap 
+Thread vs process
+python은 객체 지향 언어다? 인터프리터 언어다?
+다형성
+오버라이딩
+오버라이딩이 필요한 이유
+
+# Linux
+메모리 확인하는 명령어
+
+# Github
+알고 있는 명령어
+깃허브의 용도로 생각되는 것.
