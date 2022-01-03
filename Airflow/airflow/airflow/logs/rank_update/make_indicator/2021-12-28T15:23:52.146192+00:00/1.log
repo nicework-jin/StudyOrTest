@@ -1,0 +1,42 @@
+[2021-12-29 15:23:56,224] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: rank_update.make_indicator 2021-12-28T15:23:52.146192+00:00 [queued]>
+[2021-12-29 15:23:56,232] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: rank_update.make_indicator 2021-12-28T15:23:52.146192+00:00 [queued]>
+[2021-12-29 15:23:56,232] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-29 15:23:56,232] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-12-29 15:23:56,232] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-29 15:23:56,239] {taskinstance.py:1087} INFO - Executing <Task(BashOperator): make_indicator> on 2021-12-28T15:23:52.146192+00:00
+[2021-12-29 15:23:56,240] {standard_task_runner.py:52} INFO - Started process 430888 to run task
+[2021-12-29 15:23:56,246] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'rank_update', 'make_indicator', '2021-12-28T15:23:52.146192+00:00', '--job-id', '1890', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/rank_update.py', '--cfg-path', '/tmp/tmp05vauelx', '--error-file', '/tmp/tmpf3vusa25']
+[2021-12-29 15:23:56,246] {standard_task_runner.py:77} INFO - Job 1890: Subtask make_indicator
+[2021-12-29 15:23:56,283] {logging_mixin.py:104} INFO - Running <TaskInstance: rank_update.make_indicator 2021-12-28T15:23:52.146192+00:00 [running]> on host airflowvm
+[2021-12-29 15:23:56,362] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=rank_update
+AIRFLOW_CTX_TASK_ID=make_indicator
+AIRFLOW_CTX_EXECUTION_DATE=2021-12-28T15:23:52.146192+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-12-28T15:23:52.146192+00:00
+[2021-12-29 15:23:56,362] {subprocess.py:52} INFO - Tmp dir root location: 
+ /tmp
+[2021-12-29 15:23:56,363] {subprocess.py:63} INFO - Running command: ['bash', '-c', 'python3 /home/airflow/parser4Study/multiple_parser.py /home/airflow/AlgorithmStudy_211124/220104/']
+[2021-12-29 15:23:56,366] {subprocess.py:75} INFO - Output:
+[2021-12-29 15:23:56,685] {subprocess.py:79} INFO - Traceback (most recent call last):
+[2021-12-29 15:23:56,685] {subprocess.py:79} INFO -   File "/home/airflow/parser4Study/multiple_parser.py", line 68, in <module>
+[2021-12-29 15:23:56,685] {subprocess.py:79} INFO -     multiple_parser.load_and_parse_files()
+[2021-12-29 15:23:56,685] {subprocess.py:79} INFO -   File "/home/airflow/parser4Study/multiple_parser.py", line 17, in load_and_parse_files
+[2021-12-29 15:23:56,686] {subprocess.py:79} INFO -     for filename in os.listdir(self.route):
+[2021-12-29 15:23:56,686] {subprocess.py:79} INFO - FileNotFoundError: [Errno 2] No such file or directory: '/home/airflow/AlgorithmStudy_211124/220104/'
+[2021-12-29 15:23:56,722] {subprocess.py:83} INFO - Command exited with return code 1
+[2021-12-29 15:23:56,727] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/operators/bash.py", line 180, in execute
+    raise AirflowException('Bash command failed. The command returned a non-zero exit code.')
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code.
+[2021-12-29 15:23:56,728] {taskinstance.py:1524} INFO - Marking task as FAILED. dag_id=rank_update, task_id=make_indicator, execution_date=20211228T152352, start_date=20211229T152356, end_date=20211229T152356
+[2021-12-29 15:23:56,777] {local_task_job.py:151} INFO - Task exited with return code 1

@@ -1,0 +1,25 @@
+[2021-12-22 00:00:11,552] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing.extracting_user 2021-12-21T00:00:00+00:00 [queued]>
+[2021-12-22 00:00:11,564] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing.extracting_user 2021-12-21T00:00:00+00:00 [queued]>
+[2021-12-22 00:00:11,565] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-22 00:00:11,565] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-12-22 00:00:11,565] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-22 00:00:11,579] {taskinstance.py:1087} INFO - Executing <Task(SimpleHttpOperator): extracting_user> on 2021-12-21T00:00:00+00:00
+[2021-12-22 00:00:11,581] {standard_task_runner.py:52} INFO - Started process 169563 to run task
+[2021-12-22 00:00:11,588] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'user_processing', 'extracting_user', '2021-12-21T00:00:00+00:00', '--job-id', '1553', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/user_processing.py', '--cfg-path', '/tmp/tmpjg18zhqr', '--error-file', '/tmp/tmp2m74jiok']
+[2021-12-22 00:00:11,589] {standard_task_runner.py:77} INFO - Job 1553: Subtask extracting_user
+[2021-12-22 00:00:11,627] {logging_mixin.py:104} INFO - Running <TaskInstance: user_processing.extracting_user 2021-12-21T00:00:00+00:00 [running]> on host airflowvm
+[2021-12-22 00:00:11,665] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=user_processing
+AIRFLOW_CTX_TASK_ID=extracting_user
+AIRFLOW_CTX_EXECUTION_DATE=2021-12-21T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-12-21T00:00:00+00:00
+[2021-12-22 00:00:11,665] {http.py:111} INFO - Calling HTTP method
+[2021-12-22 00:00:11,669] {base.py:69} INFO - Using connection to: id: user_api. Host: https://randomuser.me, Port: None, Schema: , Login: , Password: ***, extra: {}
+[2021-12-22 00:00:11,670] {http.py:140} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2021-12-22 00:00:11,979] {http.py:115} INFO - {"results":[{"gender":"female","name":{"title":"Ms","first":"Abigail","last":"Young"},"location":{"street":{"number":7659,"name":"Oak Lawn Ave"},"city":"Vancouver","state":"Nebraska","country":"United States","postcode":20306,"coordinates":{"latitude":"84.4448","longitude":"45.3670"},"timezone":{"offset":"+5:45","description":"Kathmandu"}},"email":"abigail.young@example.com","login":{"uuid":"0fcbc9e8-1feb-4382-b3f8-672a24f0c3d2","username":"orangekoala507","password":"vulva","salt":"86SnGlBn","md5":"29eed951de596a7310903bfe2952f2d3","sha1":"59412fb792dc0eadba00238549668aa7bcfcedd5","sha256":"4433889f49941742f0d56c1c58d30e7b5792bbfbdceec402e7daec97778f2be4"},"dob":{"date":"1952-10-13T15:31:45.057Z","age":69},"registered":{"date":"2013-08-15T10:34:04.324Z","age":8},"phone":"(390)-728-1391","cell":"(941)-528-4524","id":{"name":"SSN","value":"404-87-9067"},"picture":{"large":"https://randomuser.me/api/portraits/women/13.jpg","medium":"https://randomuser.me/api/portraits/med/women/13.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/13.jpg"},"nat":"US"}],"info":{"seed":"405e098824486c3d","results":1,"page":1,"version":"1.3"}}
+[2021-12-22 00:00:12,019] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=user_processing, task_id=extracting_user, execution_date=20211221T000000, start_date=20211222T000011, end_date=20211222T000012
+[2021-12-22 00:00:12,043] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-12-22 00:00:12,084] {local_task_job.py:151} INFO - Task exited with return code 0

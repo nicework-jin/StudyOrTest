@@ -1,0 +1,26 @@
+[2021-12-20 19:50:04,175] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: rank_update.make_indicator 2021-12-20T19:40:00+00:00 [queued]>
+[2021-12-20 19:50:04,181] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: rank_update.make_indicator 2021-12-20T19:40:00+00:00 [queued]>
+[2021-12-20 19:50:04,181] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-20 19:50:04,181] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-12-20 19:50:04,181] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-20 19:50:04,189] {taskinstance.py:1087} INFO - Executing <Task(BashOperator): make_indicator> on 2021-12-20T19:40:00+00:00
+[2021-12-20 19:50:04,190] {standard_task_runner.py:52} INFO - Started process 64663 to run task
+[2021-12-20 19:50:04,194] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'rank_update', 'make_indicator', '2021-12-20T19:40:00+00:00', '--job-id', '699', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/rank_update.py', '--cfg-path', '/tmp/tmpp20padev', '--error-file', '/tmp/tmpgn1qg8z8']
+[2021-12-20 19:50:04,194] {standard_task_runner.py:77} INFO - Job 699: Subtask make_indicator
+[2021-12-20 19:50:04,227] {logging_mixin.py:104} INFO - Running <TaskInstance: rank_update.make_indicator 2021-12-20T19:40:00+00:00 [running]> on host airflowvm
+[2021-12-20 19:50:04,303] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=rank_update
+AIRFLOW_CTX_TASK_ID=make_indicator
+AIRFLOW_CTX_EXECUTION_DATE=2021-12-20T19:40:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-12-20T19:40:00+00:00
+[2021-12-20 19:50:04,303] {subprocess.py:52} INFO - Tmp dir root location: 
+ /tmp
+[2021-12-20 19:50:04,304] {subprocess.py:63} INFO - Running command: ['bash', '-c', 'python3 /home/airflow/parser4Study/multiple_parser.py /home/airflow/AlgorithmStudy_211124/211221/']
+[2021-12-20 19:50:04,306] {subprocess.py:75} INFO - Output:
+[2021-12-20 19:50:04,788] {subprocess.py:83} INFO - Command exited with return code 0
+[2021-12-20 19:50:04,801] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=rank_update, task_id=make_indicator, execution_date=20211220T194000, start_date=20211220T195004, end_date=20211220T195004
+[2021-12-20 19:50:04,816] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-12-20 19:50:04,848] {local_task_job.py:151} INFO - Task exited with return code 0

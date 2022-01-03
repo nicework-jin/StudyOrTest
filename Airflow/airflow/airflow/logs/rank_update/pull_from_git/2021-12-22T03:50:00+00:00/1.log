@@ -1,0 +1,27 @@
+[2021-12-22 04:00:03,058] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: rank_update.pull_from_git 2021-12-22T03:50:00+00:00 [queued]>
+[2021-12-22 04:00:03,063] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: rank_update.pull_from_git 2021-12-22T03:50:00+00:00 [queued]>
+[2021-12-22 04:00:03,063] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-22 04:00:03,063] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-12-22 04:00:03,063] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-22 04:00:03,070] {taskinstance.py:1087} INFO - Executing <Task(BashOperator): pull_from_git> on 2021-12-22T03:50:00+00:00
+[2021-12-22 04:00:03,071] {standard_task_runner.py:52} INFO - Started process 184053 to run task
+[2021-12-22 04:00:03,075] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'rank_update', 'pull_from_git', '2021-12-22T03:50:00+00:00', '--job-id', '1674', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/rank_update.py', '--cfg-path', '/tmp/tmp4cmllg95', '--error-file', '/tmp/tmpq7d2aqjh']
+[2021-12-22 04:00:03,076] {standard_task_runner.py:77} INFO - Job 1674: Subtask pull_from_git
+[2021-12-22 04:00:03,114] {logging_mixin.py:104} INFO - Running <TaskInstance: rank_update.pull_from_git 2021-12-22T03:50:00+00:00 [running]> on host airflowvm
+[2021-12-22 04:00:03,232] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=rank_update
+AIRFLOW_CTX_TASK_ID=pull_from_git
+AIRFLOW_CTX_EXECUTION_DATE=2021-12-22T03:50:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-12-22T03:50:00+00:00
+[2021-12-22 04:00:03,233] {subprocess.py:52} INFO - Tmp dir root location: 
+ /tmp
+[2021-12-22 04:00:03,233] {subprocess.py:63} INFO - Running command: ['bash', '-c', 'git -C /home/airflow/AlgorithmStudy_211124 pull']
+[2021-12-22 04:00:03,236] {subprocess.py:75} INFO - Output:
+[2021-12-22 04:00:04,169] {subprocess.py:79} INFO - Already up to date.
+[2021-12-22 04:00:04,170] {subprocess.py:83} INFO - Command exited with return code 0
+[2021-12-22 04:00:04,196] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=rank_update, task_id=pull_from_git, execution_date=20211222T035000, start_date=20211222T040003, end_date=20211222T040004
+[2021-12-22 04:00:04,212] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-12-22 04:00:04,216] {local_task_job.py:151} INFO - Task exited with return code 0

@@ -1,0 +1,25 @@
+[2021-12-23 00:00:06,842] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing.extracting_user 2021-12-22T00:00:00+00:00 [queued]>
+[2021-12-23 00:00:06,847] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing.extracting_user 2021-12-22T00:00:00+00:00 [queued]>
+[2021-12-23 00:00:06,847] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-23 00:00:06,847] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-12-23 00:00:06,847] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-23 00:00:06,855] {taskinstance.py:1087} INFO - Executing <Task(SimpleHttpOperator): extracting_user> on 2021-12-22T00:00:00+00:00
+[2021-12-23 00:00:06,857] {standard_task_runner.py:52} INFO - Started process 277031 to run task
+[2021-12-23 00:00:06,862] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'user_processing', 'extracting_user', '2021-12-22T00:00:00+00:00', '--job-id', '1736', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/user_processing.py', '--cfg-path', '/tmp/tmp5nxhjkeq', '--error-file', '/tmp/tmplg55cn3r']
+[2021-12-23 00:00:06,862] {standard_task_runner.py:77} INFO - Job 1736: Subtask extracting_user
+[2021-12-23 00:00:06,898] {logging_mixin.py:104} INFO - Running <TaskInstance: user_processing.extracting_user 2021-12-22T00:00:00+00:00 [running]> on host airflowvm
+[2021-12-23 00:00:06,943] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=user_processing
+AIRFLOW_CTX_TASK_ID=extracting_user
+AIRFLOW_CTX_EXECUTION_DATE=2021-12-22T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-12-22T00:00:00+00:00
+[2021-12-23 00:00:06,943] {http.py:111} INFO - Calling HTTP method
+[2021-12-23 00:00:06,947] {base.py:69} INFO - Using connection to: id: user_api. Host: https://randomuser.me, Port: None, Schema: , Login: , Password: ***, extra: {}
+[2021-12-23 00:00:06,948] {http.py:140} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2021-12-23 00:00:07,307] {http.py:115} INFO - {"results":[{"gender":"male","name":{"title":"Mr","first":"Pat","last":"Russell"},"location":{"street":{"number":2161,"name":"E Sandy Lake Rd"},"city":"Thornton","state":"Texas","country":"United States","postcode":88025,"coordinates":{"latitude":"89.7372","longitude":"-88.8175"},"timezone":{"offset":"-11:00","description":"Midway Island, Samoa"}},"email":"pat.russell@example.com","login":{"uuid":"bc033edd-e5f6-44eb-b995-cf90391d408c","username":"organicfrog785","password":"medusa","salt":"7u9zs4T9","md5":"fc0ba1a765e5709aa5e96780ad780187","sha1":"4b9f7aa4b18065cf59b21a85a066c9131b722c2d","sha256":"5ac81cf3787e2de495704e7ebb3fcd9fc5f7d0333684f92b8c6600a4568b5fb0"},"dob":{"date":"1996-12-10T11:57:56.924Z","age":25},"registered":{"date":"2012-08-15T14:04:46.907Z","age":9},"phone":"(251)-820-5732","cell":"(656)-701-1731","id":{"name":"SSN","value":"697-46-3357"},"picture":{"large":"https://randomuser.me/api/portraits/men/3.jpg","medium":"https://randomuser.me/api/portraits/med/men/3.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/men/3.jpg"},"nat":"US"}],"info":{"seed":"5c9cce4593ce1b05","results":1,"page":1,"version":"1.3"}}
+[2021-12-23 00:00:07,351] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=user_processing, task_id=extracting_user, execution_date=20211222T000000, start_date=20211223T000006, end_date=20211223T000007
+[2021-12-23 00:00:07,384] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-12-23 00:00:07,398] {local_task_job.py:151} INFO - Task exited with return code 0

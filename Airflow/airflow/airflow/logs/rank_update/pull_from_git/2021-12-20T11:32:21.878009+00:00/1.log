@@ -1,0 +1,33 @@
+[2021-12-20 11:32:23,349] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: rank_update.pull_from_git 2021-12-20T11:32:21.878009+00:00 [queued]>
+[2021-12-20 11:32:23,354] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: rank_update.pull_from_git 2021-12-20T11:32:21.878009+00:00 [queued]>
+[2021-12-20 11:32:23,354] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-20 11:32:23,354] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-12-20 11:32:23,355] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-20 11:32:23,361] {taskinstance.py:1087} INFO - Executing <Task(BashOperator): pull_from_git> on 2021-12-20T11:32:21.878009+00:00
+[2021-12-20 11:32:23,362] {standard_task_runner.py:52} INFO - Started process 29272 to run task
+[2021-12-20 11:32:23,366] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'rank_update', 'pull_from_git', '2021-12-20T11:32:21.878009+00:00', '--job-id', '444', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/rank_update.py', '--cfg-path', '/tmp/tmpc6hhwc3k', '--error-file', '/tmp/tmpocrcrq5k']
+[2021-12-20 11:32:23,367] {standard_task_runner.py:77} INFO - Job 444: Subtask pull_from_git
+[2021-12-20 11:32:23,398] {logging_mixin.py:104} INFO - Running <TaskInstance: rank_update.pull_from_git 2021-12-20T11:32:21.878009+00:00 [running]> on host airflowvm
+[2021-12-20 11:32:23,469] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=rank_update
+AIRFLOW_CTX_TASK_ID=pull_from_git
+AIRFLOW_CTX_EXECUTION_DATE=2021-12-20T11:32:21.878009+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-12-20T11:32:21.878009+00:00
+[2021-12-20 11:32:23,470] {subprocess.py:52} INFO - Tmp dir root location: 
+ /tmp
+[2021-12-20 11:32:23,470] {subprocess.py:63} INFO - Running command: ['bash', '-c', 'git -C /home/airflow/AlgorithmStudy_211124 pull']
+[2021-12-20 11:32:23,473] {subprocess.py:75} INFO - Output:
+[2021-12-20 11:32:23,991] {subprocess.py:79} INFO - From https://github.com/nicework-jin/AlgorithmStudy_211124
+[2021-12-20 11:32:23,991] {subprocess.py:79} INFO -    081d8af..6eb22e7  main       -> origin/main
+[2021-12-20 11:32:24,003] {subprocess.py:79} INFO - Updating 081d8af..6eb22e7
+[2021-12-20 11:32:24,003] {subprocess.py:79} INFO - Fast-forward
+[2021-12-20 11:32:24,010] {subprocess.py:79} INFO -  ...63\241_\354\235\264\354\204\261\354\247\204.py" | 83 ++++++++++++++++++++++
+[2021-12-20 11:32:24,010] {subprocess.py:79} INFO -  1 file changed, 83 insertions(+)
+[2021-12-20 11:32:24,010] {subprocess.py:79} INFO -  create mode 100644 "211221/\353\260\251\352\270\210\352\267\270\352\263\241_\354\235\264\354\204\261\354\247\204.py"
+[2021-12-20 11:32:24,011] {subprocess.py:83} INFO - Command exited with return code 0
+[2021-12-20 11:32:24,031] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=rank_update, task_id=pull_from_git, execution_date=20211220T113221, start_date=20211220T113223, end_date=20211220T113224
+[2021-12-20 11:32:24,055] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-12-20 11:32:24,103] {local_task_job.py:151} INFO - Task exited with return code 0
